@@ -1,0 +1,110 @@
+:root {
+  --color-bg: #f0fff4;               /* Lightest green background */
+  --color-text: #1b4332;             /* Deep green for readable text */
+  --color-accent: #95d5b2;           /* Light green accent for hover */
+  --color-button: #52b788;           /* Green for contact button */
+  --color-button-hover: #40916c;     /* Slightly darker on hover */
+  --color-shadow: rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  background-color: var(--color-bg);
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-link:hover {
+  color: var(--color-button);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.nav-link:last-child {
+  background-color: var(--color-button);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-left: 1rem;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:last-child:hover {
+  background-color: var(--color-button-hover);
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar-collapse,
+  .navbar-nav {
+    text-align: right;
+    background-color: var(--color-bg);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .nav-link:last-child {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background: url('../../assets/menu.png') no-repeat center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}

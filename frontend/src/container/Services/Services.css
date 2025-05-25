@@ -1,0 +1,145 @@
+.bdark,
+.bgreen,
+.blight {
+  border: 2px solid var(--color-dark);
+  margin: 1rem;
+  box-shadow: 0px 5px 0px #191A23;
+  border-radius: 45px;
+  align-items: center;
+  padding: 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 210px;
+}
+
+.img-services {
+  width: 210px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bdark {
+  background: var(--color-dark);
+}
+
+.bgreen {
+  background: var(--color-highlight);
+}
+
+.blight {
+  background: var(--color-grey);
+}
+
+.bdark span,
+.bgreen span,
+.blight span {
+  display: table;
+  padding: .1rem .5rem;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+  border-radius: 5px;
+}
+
+.blight span {
+  background: var(--color-highlight);
+}
+
+.bgreen span {
+  background: var(--color-grey);
+}
+
+.bdark span {
+  background: var(--color-grey);
+}
+
+.readmore {
+  display: block;
+  bottom: 0;
+  color: var(--color-dark);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.readmore svg {
+  font-size: 26px;
+  margin-right: .5rem;
+  color: var(--color-dark);
+}
+
+.bdark .readmore,
+.bdark .readmore svg {
+  color: #fff;
+}
+
+.readmore:hover {
+  transform: scale(1.1);
+  color: var(--color-dark);
+}
+
+.bdark .readmore:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  .box {
+    position: relative;
+    min-height: 60px;
+  }
+
+  .readmore {
+    position: absolute;
+    bottom: -7em;
+  }
+}
+
+/* 🔧 Clean and improved styles for small mobile devices */
+@media(max-width: 510px) {
+  .box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    min-height: auto;
+    position: relative;
+  }
+
+  .bdark,
+  .bgreen,
+  .blight {
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .bdark span,
+  .bgreen span,
+  .blight span {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+
+  .img-services {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    z-index: 1;
+    border-radius: 12px;
+  }
+
+  .readmore {
+    position: relative;
+    bottom: auto;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,71 @@
+.contact {
+    width: 100%;
+    background: #F3F3F3 url(../../assets/contact.png) no-repeat right center;
+    background-size: contain;
+    border-radius: 45px;
+    padding: 5rem 3rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 1.5rem 0;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 14px;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+/* Radio Buttons */
+.form-check-inline {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-check-label {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Submit button */
+.btn-positivus {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-positivus:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        background: #F3F3F3;
+        padding: 2rem 1.5rem;
+        margin-bottom: 3rem;
+        border-radius: 25px;
+        background-image: none;
+    }
+}

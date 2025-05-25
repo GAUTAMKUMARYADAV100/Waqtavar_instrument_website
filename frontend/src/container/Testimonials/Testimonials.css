@@ -1,0 +1,98 @@
+/* Light green gradient textured background */
+.showcase-section {
+  background: linear-gradient(135deg, #e6f9e6, #d2f7d2);
+  padding: 5rem 1.5rem;
+  border-radius: 32px;
+  box-shadow: 0 0 40px rgba(0, 80, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+/* Carousel container */
+.showcase-carousel {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Flex centering and responsive min height */
+.carousel-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 420px;
+}
+
+.showcase-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Image/video styling */
+.media-element {
+  max-width: 100%;
+  max-height: 360px;
+  border-radius: 20px;
+  border: 2px solid #84e184;
+  box-shadow: 0 8px 20px rgba(0, 80, 0, 0.2);
+}
+
+/* Title styling */
+.carousel-title {
+  color: #006600;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/* Custom carousel indicators */
+.carousel-indicators [data-bs-target] {
+  background: url('../../assets/disable.png') no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-indicators .active {
+  background: url('../../assets/enable.png') no-repeat center;
+  background-size: contain;
+}
+
+/* Align nav controls better */
+.carousel-control-next,
+.carousel-control-prev {
+  align-items: end;
+  padding: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .media-element {
+    max-height: 240px;
+    border-radius: 12px;
+  }
+
+  .carousel-title {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .showcase-carousel {
+    padding: 1.5rem 1rem;
+  }
+
+  .showcase-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-box {
+    min-height: 300px;
+  }
+}

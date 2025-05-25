@@ -1,0 +1,22 @@
+.product-page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .product-page-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}

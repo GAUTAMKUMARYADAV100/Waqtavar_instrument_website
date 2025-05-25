@@ -1,0 +1,168 @@
+/* .clients{
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+   overflow-x: scroll;
+  }
+.clients img{
+    filter: grayscale(100%);
+    cursor: pointer;
+    padding: .5rem;
+    margin: 1rem 1rem 0rem;
+}
+
+.clients img:hover{
+    filter: grayscale(0);
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+ */
+
+
+ .hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f0f2f5, #e1e8ed);
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.title-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.text-section p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.btn-positivus {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-positivus:hover {
+  background-color: #444;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+.clients-container {
+  position: relative;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.clients {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.clients-track {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.clients-track.paused {
+  animation-play-state: paused;
+}
+
+.clients img {
+  filter: grayscale(100%);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 1.5rem; 
+  max-height: 80px; 
+  min-width: 150px; 
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.clients img:hover {
+  filter: grayscale(0);
+  transform: scale(1.5); /* Magnification effect */
+  z-index: 10; /* Bring to front */
+  position: relative;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background: #333;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
