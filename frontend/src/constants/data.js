@@ -142,7 +142,7 @@ export const productData = [
     ]
     },
   {
-    "id": "gas-filled",
+    "id": 2,
     "title": "Gas Filled Temperature Gauge (TG-GF)",
     "subcategories": [
             {

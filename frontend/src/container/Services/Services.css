@@ -61,7 +61,7 @@
 .readmore {
   display: block;
   bottom: 0;
-  color: var(--color-dark);
+  color:  #1a1a1a;
   font-size: 20px;
   text-decoration: none;
 }
@@ -72,10 +72,10 @@
   color: var(--color-dark);
 }
 
-.bdark .readmore,
+/* .bdark .readmore,
 .bdark .readmore svg {
   color: #fff;
-}
+} */
 
 .readmore:hover {
   transform: scale(1.1);

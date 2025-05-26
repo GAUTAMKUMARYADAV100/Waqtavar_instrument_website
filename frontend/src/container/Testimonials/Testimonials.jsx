@@ -1,37 +1,3 @@
-// import React from 'react';
-// import { Headings } from '../../components';
-// import { data } from '../../constants';
-// import Carousel from 'react-bootstrap/Carousel';
-// import './Testimonials.css';
-
-// const Testimonials = () => {
-//   return (
-//     <section className="section-padding" id="testimonials">
-//       <Headings 
-//         title="Testimonials" 
-//         text="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services" 
-//       />
-
-//       <div className="carousel-bg">
-//         <Carousel fade indicators={true} interval={6000}>
-//           {data.Testimonials.map((item, index) => (
-//             <Carousel.Item key={index} className="carousel-box">
-//               <Carousel.Caption className="testimonial-caption">
-//                 <p className="speech-bubble">{item.testimonial}</p>
-//                 <div className="carousel-name">{item.name}</div>
-//                 <div className="carousel-position">{item.position}</div>
-//               </Carousel.Caption>
-//             </Carousel.Item>
-//           ))}
-//         </Carousel>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Testimonials;
-
-
 import React, { useRef, useEffect, useState } from 'react';
 import { Headings } from '../../components';
 import Carousel from 'react-bootstrap/Carousel';
@@ -63,7 +29,6 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    // Pause all videos except the currently active one
     videoRefs.current.forEach((video, index) => {
       if (video && index !== activeIndex) {
         video.pause();
@@ -83,13 +48,14 @@ const Testimonials = () => {
         <Carousel
           fade
           indicators={true}
-          interval={6000}
+          interval={8000}
           activeIndex={activeIndex}
           onSelect={(selectedIndex) => setActiveIndex(selectedIndex)}
+          touch
         >
           {showcaseItems.map((item, index) => (
             <Carousel.Item key={index} className="carousel-box">
-              <Carousel.Caption className="showcase-caption">
+              <div className="media-wrapper">
                 {item.type === 'video' ? (
                   <video
                     ref={(el) => (videoRefs.current[index] = el)}
@@ -98,9 +64,9 @@ const Testimonials = () => {
                     controls
                     muted
                     playsInline
-                    onEnded={() => {
-                      videoRefs.current[index].pause();
-                    }}
+                    webkit-playsinline="true"
+                    controlsList="nodownload"
+                    preload="metadata"
                   />
                 ) : (
                   <img
@@ -110,7 +76,7 @@ const Testimonials = () => {
                   />
                 )}
                 <div className="carousel-title">{item.title}</div>
-              </Carousel.Caption>
+              </div>
             </Carousel.Item>
           ))}
         </Carousel>
@@ -120,5 +86,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-

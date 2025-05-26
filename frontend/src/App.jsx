@@ -1,38 +1,4 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import React from 'react';
 
-// import {
-//   Testimonials,
-//   CaseStudies,
-//   Contact,
-//   Footer,
-//   Hero,
-//   Process,
-//   Services,
-//   Team,
-//   CTA,
-// } from './container';
-
-// import { Menu } from './components';
-
-// const App = () => {
-//   return (
-//     <div className="container px-3 mx-auto">
-//       <Menu />
-//       <Hero />
-//       <Services />
-//       <CTA />
-//       {/* <CaseStudies /> */}
-//       <Process />
-//       <Team />
-//       <Testimonials />
-//       <Contact />
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default App;
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
