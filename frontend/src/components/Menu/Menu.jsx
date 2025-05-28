@@ -42,7 +42,7 @@ const Menu = () => {
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="/">
-          <img src={images.logo} alt="logo" className="navbar-logo" />
+          <img src={images.logo} alt="logo" className="navbar-logo" loading="lazy" />
 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

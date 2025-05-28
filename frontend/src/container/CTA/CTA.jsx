@@ -42,7 +42,7 @@ const IndustriesSection = () => {
         <div className="row justify-content-center">
           {pageItems.map((industry, index) => (
             <div key={index} className="col-lg-2 col-md-4 col-6 mb-4">
-              <img src={industry.img} alt={industry.name} className="industry-img" />
+              <img src={industry.img} alt={industry.name} loading="lazy" className="industry-img" />
               <p className="fw-bold">{industry.name}</p>
             </div>
           ))}

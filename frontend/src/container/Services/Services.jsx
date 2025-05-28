@@ -32,7 +32,7 @@ const Services = () => {
               </button>
             </div>
             <div className="col-md-6 text-end">
-              <img src={imgURL} alt={titleone} className="img-fluid img-services" />
+              <img src={imgURL} alt={titleone} className="img-fluid img-services" loading="lazy" />
             </div>
           </div>
         </div>

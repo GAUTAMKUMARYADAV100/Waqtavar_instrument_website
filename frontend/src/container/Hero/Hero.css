@@ -1,24 +1,4 @@
-/* .clients{
-   display: flex;
-   justify-content: center;
-   flex-wrap: nowrap;
-   overflow-x: scroll;
-  }
-.clients img{
-    filter: grayscale(100%);
-    cursor: pointer;
-    padding: .5rem;
-    margin: 1rem 1rem 0rem;
-}
 
-.clients img:hover{
-    filter: grayscale(0);
-}
-::-webkit-scrollbar {
-    width: 0;  
-    background: transparent;  
-}
- */
 
 
  .hero {
@@ -91,11 +71,19 @@
   height: auto;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Add this */
   transition: transform 0.3s ease;
 }
 
 .hero-img:hover {
   transform: scale(1.03);
+}
+
+.hero-img svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* Add this for smooth corners */
 }
 
 .clients-container {

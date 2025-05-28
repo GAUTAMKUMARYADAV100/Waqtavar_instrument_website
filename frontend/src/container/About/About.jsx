@@ -21,7 +21,7 @@ const About = () => {
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <div className="about-content">
               <div className="company-logo mb-4">
-                <img src={images.logo} alt="Waqtavar Instrument Logo" />
+                <img src={images.logo} alt="Waqtavar Instrument Logo" loading="lazy" />
               </div>
               <h3 className="mb-3">Our Story</h3>
               <p className="mb-3">{aboutusdata.about.companyDescription}</p>
@@ -90,6 +90,7 @@ const About = () => {
                 src={images.Waqtavar_collage} 
                 alt="Waqtavar Instrument Facility" 
                 className="img-fluid rounded"
+                loading="lazy"
               />
             </div>
           </div>
@@ -108,7 +109,7 @@ const About = () => {
             <div className="col-lg-4 col-md-6 col-12 mb-4" key={index}>
               <div className="cert-card">
                 <div className="cert-img">
-                  <img src={cert.image} alt={cert.title} />
+                  <img src={cert.image} alt={cert.title} loading="lazy" />
                 </div>
                 <div className="cert-body">
                   <h5>{cert.title}</h5>
@@ -144,7 +145,7 @@ const About = () => {
             <div className="col-lg-4 col-md-6 col-12" key={index}>
               <div className="card-team">
                 <div className="card-team-header">
-                  <img src={foto} alt={name} className="team-member-img" />
+                  <img src={foto} alt={name} className="team-member-img" loading="lazy" />
                   <div className="team-member-info">
                     <p className="member-name">{name}</p>
                     <p className="member-position">{position}</p>

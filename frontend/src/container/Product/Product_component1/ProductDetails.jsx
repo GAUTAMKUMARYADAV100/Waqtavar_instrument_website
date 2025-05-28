@@ -22,7 +22,7 @@ const ProductDetails = ({ product }) => {
       {selectedSub && (
         <div className="subcategory-details">
           <h3>{selectedSub.title}</h3>
-          <img src={selectedSub.image} alt={selectedSub.title} />
+          <img src={selectedSub.image} alt={selectedSub.title} loading="lazy" />
           <p>{selectedSub.description}</p>
 
           <h4>Features:</h4>
@@ -51,7 +51,7 @@ const ProductDetails = ({ product }) => {
               className="subcategory-card"
               onClick={() => setSelectedSubId(sub.id)}
             >
-              <img src={sub.image} alt={sub.title} />
+              <img src={sub.image} alt={sub.title} loading="lazy" />
               <p>{sub.title}</p>
               <button
                 className="quotation-button small"
