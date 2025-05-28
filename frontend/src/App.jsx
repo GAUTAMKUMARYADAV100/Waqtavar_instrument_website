@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Products from './container/Product/Product_catalog/ProductCatalog';
+import { SpeedInsights } from '@vercel/speed-insights/react'; // ✅ import
 
 import {
   Testimonials,
@@ -81,6 +82,8 @@ const App = () => {
         </Routes>
 
         <Footer />
+        {/* ✅ Add Speed Insights here */}
+        <SpeedInsights />
       </div>
     </Router>
   );
