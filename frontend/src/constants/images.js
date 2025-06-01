@@ -14,12 +14,12 @@ import services03  from '../assets/services03.png';
 import services04  from '../assets/services04.png';
 import services05  from '../assets/services05.png';
 import services06  from '../assets/services06.png';
-import team02 from '../assets/team02.png';
-import team03 from '../assets/team03.png';
-import team04 from '../assets/team04.png';
-import team05 from '../assets/team05.png';
-import team06 from '../assets/team06.png';
-import team01 from '../assets/team01.png';
+// import team02 from '../assets/team02.png';
+// import team03 from '../assets/team03.png';
+// import team04 from '../assets/team04.png';
+// import team05 from '../assets/team05.png';
+// import team06 from '../assets/team06.png';
+// import team01 from '../assets/team01.png';
 import hero from '../assets/hero.png';
 import industries1 from '../assets/industries1.png';
 import industries2 from '../assets/industries2.png';
@@ -66,12 +66,12 @@ services03,
 services04,
 services05,
 services06,
-team02,
-team03,
-team04,
-team05,
-team06,
-team01,
+// team02,
+// team03,
+// team04,
+// team05,
+// team06,
+// team01,
 hero,
 industries1,
 industries2,

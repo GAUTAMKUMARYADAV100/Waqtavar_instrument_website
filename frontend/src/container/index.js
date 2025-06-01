@@ -10,6 +10,7 @@ import Process from './Process/Process';
 import Services from './Services/Services';
 import About from './About/About';
 import CTA from './CTA/CTA';
+import AboutUs from './AboutUs/AboutUs'
 
 export {
   Testimonials,

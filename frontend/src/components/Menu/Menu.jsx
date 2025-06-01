@@ -49,7 +49,13 @@ const Menu = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav>
             {data.Menu.map((item, index) => (
-              <NavLink key={index} to={item.link} className="nav-link">
+              <NavLink
+                key={index}
+                to={item.link}
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? "active" : ""} ${index === data.Menu.length - 1 ? "contact-button" : ""}`
+                }
+              >
                 {item.text}
               </NavLink>
             ))}

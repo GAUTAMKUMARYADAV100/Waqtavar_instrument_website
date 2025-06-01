@@ -10,7 +10,6 @@ const { productData } = data;
 const ProductCatalog = () => {
   const { id } = useParams();
   const [selectedProduct, setSelectedProduct] = useState(productData[0]);
-  console.log("param id",id);
 
   useEffect(() => {
     if (id) {

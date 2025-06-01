@@ -54,11 +54,20 @@
 .nav-link:hover::after {
   width: 100%;
 }
+/* Highlight active nav link */
+.nav-link.active {
+  color: var(--color-button);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 
 /* Contact Button */
-.nav-link:last-child {
+.contact-button {
   background-color: var(--color-button);
-  color: #fff;
+  color: #fff !important;
   padding: 8px 20px;
   border-radius: 20px;
   font-weight: 600;
@@ -67,10 +76,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.nav-link:last-child:hover {
+.contact-button:hover {
   background-color: var(--color-button-hover);
   transform: scale(1.05);
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 991px) {
