@@ -10,7 +10,7 @@ import heroAnimation from '../../assets/latest gif tempgauge.json';
 import { useNavigate } from 'react-router-dom';
 
 
-const logos = ["btm1", "gtm1", "pgm1", "ecm1", "eam1", "am5"];
+const logos = ["services01", "services02", "services03", "services04", "services05", "services06"];
 
 const Hero = () => {
   const [activeDot, setActiveDot] = useState(0);

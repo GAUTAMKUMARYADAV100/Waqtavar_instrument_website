@@ -13,13 +13,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  min-height: 210px;
+  height: 100%; /* Let it grow fully in its container */
 }
 
 .img-services {
   width: 210px;
   height: 180px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 }
 
