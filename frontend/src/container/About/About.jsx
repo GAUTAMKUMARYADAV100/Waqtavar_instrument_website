@@ -1,13 +1,20 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Headings } from '../../components';
 import { aboutusdata } from '../../constants/data';
 import { images } from '../../constants';
 import { BsLinkedin, BsAward, BsBuilding, BsGearFill } from 'react-icons/bs';
 import { FiUsers, FiMapPin } from 'react-icons/fi';
-import { FaIndustry, FaRupeeSign } from 'react-icons/fa';
+import { FaIndustry, FaRupeeSign,FaFacebook } from 'react-icons/fa';
+
 import './About.css';
 
+
+
 const About = () => {
+
+  const [selectedCert, setSelectedCert] = useState(null);
+  
   return (
     <div className="section-padding about-page">
       {/* About Company Section */}
@@ -108,7 +115,10 @@ const About = () => {
           {aboutusdata.certifications.map((cert, index) => (
             <div className="col-lg-4 col-md-6 col-12 mb-4" key={index}>
               <div className="cert-card">
-                <div className="cert-img">
+                <div className="cert-img"
+                  onClick={() => setSelectedCert(cert)}  // ADD THIS
+                  style={{ cursor: 'pointer' }}  
+                >
                   <img src={cert.image} alt={cert.title} loading="lazy" />
                 </div>
                 <div className="cert-body">
@@ -141,7 +151,7 @@ const About = () => {
         />
         
         <div className="row">
-          {aboutusdata.Team.map(({ name, position, info, foto, linkedin }, index) => (
+          {aboutusdata.Team.map(({ name, position, info, foto, facebook }, index) => (
             <div className="col-lg-4 col-md-6 col-12" key={index}>
               <div className="card-team">
                 <div className="card-team-header">
@@ -151,14 +161,15 @@ const About = () => {
                     <p className="member-position">{position}</p>
                   </div>
                   <a
-                    href={linkedin}
-                    aria-label={`LinkedIn profile of ${name}`}
+                    href={facebook}
+                    aria-label={`Facebook profile of ${name}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="linkedin-icon"
+                    className="facebook-icon"
                   >
-                    <BsLinkedin />
+                    <FaFacebook />
                   </a>
+
                 </div>
                 <div className="team-member-bio">
                   <p>{info}</p>
@@ -172,6 +183,16 @@ const About = () => {
           <button className="btn-positivus">View Full Team</button>
         </div>
       </section>
+      {selectedCert && (
+        <div className="cert-modal" onClick={() => setSelectedCert(null)}>
+          <div className="cert-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedCert.image} alt={selectedCert.title} className="modal-img" />
+            <button className="close-modal" onClick={() => setSelectedCert(null)}>×</button>
+            <p className="modal-caption">{selectedCert.title}</p>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

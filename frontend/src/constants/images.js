@@ -37,7 +37,12 @@ import am2 from '../assets/am2.png';
 import am3 from '../assets/am3.png';
 import am4 from '../assets/am4.png';
 import am5 from '../assets/am5.png';
-import Waqtavar_collage from '../assets/Waqtavar_collage.png'
+import Waqtavar_collage from '../assets/Waqtavar_collage.png';
+import CompanyRegistration from '../assets/CompanyRegistration.avif';
+import GSTRegistration from '../assets/GSTRegistration.avif';
+import VrindavanYadav from '../assets/VrindavanYadav.avif';
+import MsmeRegistration from '../assets/MsmeRegistration.avif';
+import Team from '../assets/Team.avif';
 
 export default{
 thingshappen,
@@ -78,4 +83,9 @@ am3,
 am4,
 am5,
 Waqtavar_collage,
+CompanyRegistration,
+GSTRegistration,
+VrindavanYadav,
+MsmeRegistration,
+Team,
 };

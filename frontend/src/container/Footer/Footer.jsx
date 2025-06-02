@@ -21,9 +21,9 @@ const Footer = () => {
         </nav>
         
         <div className="footer-social">
-          <a href="#"><BsFacebook /></a>
-          <a href="#"><BsTwitter /></a>
-          <a href="#"><BsLinkedin /></a>
+          <a href="https://www.facebook.com/vrindavana.yadav"><BsFacebook /></a>
+          <a href="https://www.facebook.com/vrindavana.yadav"><BsTwitter /></a>
+          <a href="https://www.facebook.com/vrindavana.yadav"><BsLinkedin /></a>
         </div>
       </div>
       

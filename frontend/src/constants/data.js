@@ -399,20 +399,20 @@ export const aboutusdata = {
     {
       title: "GST Registration",
       description: "Registered under GST with number 24AFNPY2159J1ZV since July 2019, ensuring compliance with Indian tax regulations.",
-      image: "/images/certifications/gst-certificate.jpg",
+      image: images.GSTRegistration,
       registrationNumber: "24AFNPY2159J1ZV",
       registrationDate: "14-07-2019"
     },
     {
       title: "MSME/Udyam Registration",
       description: "Recognized by the Ministry of Micro, Small & Medium Enterprises, Government of India, highlighting our contribution to the manufacturing sector.",
-      image: "/images/certifications/msme-certificate.jpg",
+      image: images.MsmeRegistration,
       benefits: "Eligible for government schemes and priority sector lending"
     },
     {
       title: "Company Registration",
       description: "Legally registered as a proprietorship firm under Indian laws, with all necessary business operation licenses.",
-      image: "/images/certifications/company-registration.jpg",
+      image: images.CompanyRegistration,
       legalStatus: "Proprietorship",
       owner: "Vrindavan Yadav"
     }
@@ -422,16 +422,16 @@ export const aboutusdata = {
       name: "Vrindavan Yadav",
       position: "CEO & Founder",
       info: "With extensive experience in the instrumentation industry, Vrindavan leads Waqtavar Instrument with a vision for precision and customer satisfaction.",
-      foto: "/images/team/vrindavan-yadav.jpg",
-      linkedin: "https://www.linkedin.com/in/vrindavan-yadav"
+      foto: images.VrindavanYadav,
+      facebook: "https://www.facebook.com/vrindavana.yadav"
     },
     // Add other team members as needed
     {
       name: "Quality Control Team",
       position: "Quality Assurance",
       info: "Our dedicated QC team ensures every instrument meets strict quality standards before reaching our customers.",
-      foto: "/images/team/quality-team.jpg",
-      linkedin: "#"
+      foto: images.Team,
+      facebook: "https://www.facebook.com/waqtavar.insrument"
     }
   ],
   products: {
